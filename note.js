@@ -9,10 +9,14 @@ function NotesApplication(author, notes) {
 	this.listNotes = function() {
 		var index = notes.indexOf(note);
 		if (index = "") {
-			console.log('Error! Type in a number.')
+			console.log('Error! Type in a number.');
 		}
 	}
 	console.log(notes.indexOf(note));
 	console.log(author);
 	console.log(note);
 }
+
+// Instance of NoteApplication 
+
+var noteapplication = new NotesApplication();
