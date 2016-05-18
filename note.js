@@ -1,4 +1,4 @@
-function NotesApplication(author, notes) {
+function NotesApplication(author) {
 	this.author = author;
 	this.notes = [];
 
@@ -7,7 +7,7 @@ function NotesApplication(author, notes) {
 	}
 
 	this.listNotes = function() {
-		var index = notes.indexOf(note);
+		var index = notes.indexOf(note) + 1;
 		if (index = "") {
 			console.log('Error! Type in a number.')
 		}
