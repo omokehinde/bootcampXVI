@@ -20,6 +20,7 @@
 
 
 describe("Take Notes and author", function(){
+
 	var app = new NotesApplication('chi');
 
 	it("author should be a string", function() {
@@ -29,4 +30,9 @@ describe("Take Notes and author", function(){
 	it("notes should an object", function() {
 		expect(app.notes).toBeDefined();
 	});
+
+	it("store note in array notes", function() {
+		app.create("");
+		expect(app.notes.length).not.toBe(0);
+	})
 });

@@ -3,8 +3,9 @@ function NotesApplication(author) {
 	this.notes = [];
 
 	this.create = function(note) {
-		notes.push(note);
-	}
+		this.notes.push(note);
+		return this.notes;
+		}
 
 	this.listNotes = function() {
 		var index = notes.indexOf(note) + 1;
